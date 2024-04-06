@@ -1,0 +1,196 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+    /* font-family: 'Roboto Slab', serif; */
+}
+/* .navigation{
+    display: flex;
+    flex-direction: row;
+} */
+.navbar ul{
+    overflow: auto;
+    
+}
+.navigation{
+    font-size: 19px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+#nav1 ul li {
+    display: inline-block;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    margin:3px 15px;
+}
+#nav2{
+    display: flex;
+    flex-direction: none;
+    position: absolute;
+    right: 70px;
+    top: 2px;
+}
+#nav2 input{
+    margin-right: 64px;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    padding: 5px 6px;
+    color: black;
+
+
+}
+#nav2 ul li{
+    margin: 0px 2px;
+
+}
+.navbar ul li{
+    list-style: none;   
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    /* color: black; */
+}
+.navbar{
+    padding: 2px 2px;
+    margin:1px 1px;
+}
+.navigation::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7%;
+    width: 100%;
+    background-color: rgb(143, 148, 147);
+    z-index: -1;
+    opacity: 0.8;
+}
+.center{
+    margin: 150px 107px;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    color: white;
+    font-family: 'Bree Serif', serif;
+
+}
+#search{
+    padding: 10px;
+    width: 24%;
+    margin: 7%;
+    margin-left: 36%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.h-secondary{
+    text-align: center;
+    font-size: 108%;
+}
+.center::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 86%;
+    width: 100%;
+    background-image: url(librarybg.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover ;
+    z-index: -1;
+    opacity: 0.85;
+}
+.item:hover{
+    text-decoration: underline;
+}
+.book-heading{
+    /* position: absolute;
+    left: 40%; */
+    font-size: 45px;
+    text-align: center;
+} 
+
+
+.books{
+    margin-top: 9%;
+    color: black;
+    /* background-color: burlywood; */
+   
+}
+.book-row ul {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 1.5rem;
+   
+}
+.book-row ul li{
+    border: 2px solid black;
+    width: 266px;
+    height: 344px;
+    padding: 2px 2px;
+    margin: 2px ;
+    list-style: none;
+    margin-left: 85px;
+    margin-top: 30px;
+    border-radius: 20px;
+    /* background-color: lightgray; */
+    
+}
+.book-row ul li p{
+    font-weight: bold;
+}
+.category-heading{
+    margin-left: 100px;
+    margin-top: 42px;
+}
+.img1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    box-shadow: 4px 3px 6px;
+    /* transition-property: all;
+    transition-duration: 0.5s; */
+}
+/* .img1:hover{
+    width: 300px;
+    height: 300px;
+} */
+.img1 img{
+    height: 178px;
+    width: 262px;
+    border-radius: 0px;
+    margin: -2px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+   
+}
+.img1 img:hover{
+    cursor: pointer;
+    /* width: 300px;
+    height: 300px; */
+
+   
+}
+.caption{
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+.box-button{
+    border-radius: 6px;
+    height: 36px;
+    width: 132px;
+    margin-left: 61px;
+    border: 2px solid black;
+    background-color: gray;
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 17px;
+}
+.box-button:hover{
+    cursor: pointer;
+    background-color: lightslategray;
+
+}
